@@ -2,6 +2,19 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+function getCount(str) {
+  var vowelsCount = 0;
+  const vowels = ["a", "e", "i", "o", "u"]
+  
+  for (let letter of str.toLowerCase()){
+    if (vowels.includes(letter)) {
+       vowelsCount++ }
+       }
+  
+  
+  return vowelsCount;
+}
 function App() {
   return (
     <div className="App">
