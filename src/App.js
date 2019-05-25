@@ -2,6 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function allZeros (n) {
+  var res = 0;
+  for(var i=5; i<n; i*=5)
+    res += Math.floor(n/i);
+  return res;
+}
+
 
 function getCount(str) {
   var vowelsCount = 0;
