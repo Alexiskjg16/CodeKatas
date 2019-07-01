@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Pic from './codepic.jpeg';
 
 function goodVsEvil(good, evil){
   let goodArmy = good.split(' ');
@@ -18,7 +19,7 @@ function goodVsEvil(good, evil){
 
 function allZeros (n) {
   var res = 0;
-  for(var i=5; i<n; i*=)5
+  for(var i=5; i<n; i*=5)
     res += Math.floor(n/i);
   return res;
 }
@@ -93,7 +94,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={Pic} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
